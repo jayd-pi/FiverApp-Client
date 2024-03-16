@@ -28,7 +28,7 @@ function Navbar() {
     try {
       await newRequest.post("/auth/logout");
       localStorage.setItem("currentUser", null);
-      navigate("/");
+      navigate("/login");
     } catch (err) {
       console.log(err);
     }
